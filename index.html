@@ -1,0 +1,88 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rifta - Portfolio</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <ul>
+            <li><a href="#home" class="active"><i class="bi bi-house-door-fill"></i> Home</a></li>
+            <li><a href="#about"><i class="bi bi-person-fill"></i> About Me</a></li>
+            <li><a href="#education"><i class="bi bi-book"></i> Education</a></li>
+            <li><a href="#projects"><i class="bi bi-briefcase-fill"></i> Projects</a></li>
+            <li><a href="#achievements"><i class="bi bi-award"></i> Achievements</a></li>
+            <li><a href="#skills"><i class="bi bi-ladder"></i> Skills</a></li>
+            <li><a href="#contact"><i class="bi bi-chat-fill"></i> Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="left">
+                <div class="img-box">
+                    <img src="images/avatar.png" alt="Rifta Avatar">
+                </div>
+                <p class="hello">Hello! I am <span>Rafia Sultana</span></p>
+                <h1>
+                    A student who <br>
+                    <span>Judges algorithms</span> <br>
+                    by their <span class="yellow">efficiency</span>
+                </h1>
+                <p class="clarity">and code by its clarity.</p>
+            </div>
+
+            <div class="about">
+                <h2>A Computer Science student</h2>
+                <p>
+                    Passionate about coding and software development.  
+                    Enjoys learning through building practical projects,  
+                    exploring new technologies, and solving real-world  
+                    problems step by step.
+                </p>
+            </div>
+        </section>
+
+
+    </div>
+
+    <!-- JS for active link on scroll -->
+    <script>
+        const sections = document.querySelectorAll('section');
+        const navLi = document.querySelectorAll('.sidebar ul li a');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if(scrollY >= sectionTop - 80){
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLi.forEach(li => {
+                li.classList.remove('active');
+                if(li.getAttribute('href') === '#' + current){
+                    li.classList.add('active');
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

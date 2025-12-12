@@ -1,0 +1,183 @@
+/* Reset & Global */
+body {
+    margin: 0;
+    padding: 0;
+    background: #000;
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 180px;
+    height: 100%;
+    background: #111;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 50px;
+    box-sizing: border-box;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.sidebar ul li {
+    width: 100%;
+}
+
+.sidebar ul li a {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    padding: 15px 20px;
+    text-decoration: none;
+    font-weight: 500;
+    color: white; /* text color white */
+    transition: 0.3s;
+}
+
+.sidebar ul li a i {
+    margin-right: 10px;
+    font-size: 18px;
+    color: #FFFF00; /* icon color yellow */
+}
+
+/* Active & Hover */
+.sidebar ul li a:hover,
+.sidebar ul li a.active {
+    background: transparent; /* no box */
+    color: white;
+}
+
+.sidebar ul li a:hover i,
+.sidebar ul li a.active i {
+    color: #FFFF00;
+}
+
+/* Main Content */
+.main-content {
+    margin-left: 180px;
+    padding: 120px 60px 60px;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.left {
+    max-width: 450px;
+}
+
+.img-box {
+    width: 160px;
+    height: 160px;
+    border: 3px solid #1e90ff;
+    padding: 5px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hello {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.hello span {
+    color: #dff542;
+}
+
+h1 {
+    font-family: "Caveat", cursive;
+    font-size: 40px;
+    line-height: 1.3;
+    margin: 0;
+}
+
+.yellow {
+    color: #ffe800;
+}
+
+.clarity {
+    font-size: 14px;
+    margin-top: 6px;
+}
+
+.about {
+    margin-top: 40px;
+    max-width: 500px;
+}
+
+.about h2 {
+    font-family: "Caveat", cursive;
+    font-size: 32px;
+}
+
+.about p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #d5d5d5;
+    line-height: 1.6;
+}
+
+/* Sections */
+section {
+    padding: 80px 0;
+}
+
+section h2 {
+    font-family: "Caveat", cursive;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 14px;
+    color: #d5d5d5;
+    line-height: 1.6;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .sidebar {
+        width: 60px;
+        padding-top: 20px;
+    }
+
+    .sidebar ul li a {
+        padding: 10px;
+        font-size: 12px;
+        flex-direction: column;
+    }
+
+    .sidebar ul li a i {
+        margin: 0 0 5px 0;
+    }
+
+    .main-content {
+        margin-left: 60px;
+        padding: 100px 20px 20px;
+    }
+
+    .hero {
+        flex-direction: column;
+        padding: 0;
+    }
+}
