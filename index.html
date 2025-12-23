@@ -1,29 +1,26 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rifta - Portfolio</title>
-    
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Poppins:wght@400;500;600&family=Chilanka&display=swap" rel="stylesheet">
+
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
-    
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
 <body>
-
     <!-- Sidebar -->
     <div class="sidebar">
         <ul>
             <li><a href="#home" class="active"><i class="bi bi-house-door-fill"></i> Home</a></li>
             <li><a href="#about"><i class="bi bi-person-fill"></i> About Me</a></li>
-            <li><a href="#education"><i class="bi bi-book"></i> Education</a></li>
-            <li><a href="#projects"><i class="bi bi-briefcase-fill"></i> Projects</a></li>
-            <li><a href="#achievements"><i class="bi bi-award"></i> Achievements</a></li>
+            <li><a href="#project"><i class="bi bi-briefcase-fill"></i> Project</a></li>
             <li><a href="#skills"><i class="bi bi-ladder"></i> Skills</a></li>
             <li><a href="#contact"><i class="bi bi-chat-fill"></i> Contact</a></li>
         </ul>
@@ -31,34 +28,28 @@
 
     <!-- Main Content -->
     <div class="main-content">
-
         <!-- Hero Section -->
         <section id="home" class="hero">
             <div class="left">
                 <div class="img-box">
-                    <img src="images/avatar.png" alt="Rifta Avatar">
+                    <img src="images/my.png" alt="My Image" class="hero-img">
                 </div>
                 <p class="hello">Hello! I am <span>Rafia Sultana</span></p>
                 <h1>
-                    A student who <br>
-                    <span>Judges algorithms</span> <br>
-                    by their <span class="yellow">efficiency</span>
+                    <span class="chilanka small-text">A student who</span><br>
+                    <span class="chilanka">Judges algorithms</span><br>
+                    <span class="chilanka">by their </span><span class="yellow chilanka">efficiency</span><br>
+                    <span class="chilanka small-text">and code by its clarity.</span>
                 </h1>
-                <p class="clarity">and code by its clarity.</p>
             </div>
-
             <div class="about">
                 <h2>A Computer Science student</h2>
                 <p>
-                    Passionate about coding and software development.  
-                    Enjoys learning through building practical projects,  
-                    exploring new technologies, and solving real-world  
-                    problems step by step.
+                    Passionate about coding and software development. Enjoys learning through building practical projects, 
+                    exploring new technologies, and solving real-world problems step by step.
                 </p>
             </div>
         </section>
-
-
     </div>
 
     <!-- JS for active link on scroll -->
@@ -70,19 +61,32 @@
             let current = '';
             sections.forEach(section => {
                 const sectionTop = section.offsetTop;
-                if(scrollY >= sectionTop - 80){
+                if (scrollY >= sectionTop - 80) {
                     current = section.getAttribute('id');
                 }
             });
-
             navLi.forEach(li => {
                 li.classList.remove('active');
-                if(li.getAttribute('href') === '#' + current){
+                if (li.getAttribute('href') === '#' + current) {
                     li.classList.add('active');
                 }
             });
         });
     </script>
+    <a href="cv.pdf" class="cv-btn" download>
+    <span class="cv-circle">
+        <i class="bi bi-cloud-arrow-down"></i>
+    </span>
+    <span class="cv-text">Download CV</span>
+</a>
+<div class="global-social">
+    <a href="https://www.facebook.com/profile.php?id=61560822404794"><i class="bi bi-facebook"></i><span>facebook</span></a>
+    <a href="https://www.linkedin.com/in/rifta2020/"><i class="bi bi-linkedin"></i><span>linkedin</span></a>
+    <a href="#"><i class="bi bi-twitter-x"></i><span>x</span></a>
+    <a href="https://www.instagram.com/__growthmerely__/?hl=en"><i class="bi bi-instagram"></i><span>instagram</span></a>
+</div>
+
+
 
 </body>
 </html>
