@@ -1,4 +1,4 @@
-/* ================= RESET & GLOBAL ================= */
+/*   RESET & GLOBAL  */
 body {
     margin: 0;
     padding: 0;
@@ -7,7 +7,7 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
-/* ================= SIDEBAR ================= */
+/*  SIDEBAR  */
 .sidebar {
     position: fixed;
     right: 0;
@@ -69,13 +69,13 @@ body {
     transform: scale(0.95);
 }
 
-/* ================= MAIN CONTENT ================= */
+/* MAIN CONTENT   */
 .main-content {
     margin-right: 180px;
     padding: 120px 60px 60px;
 }
 
-/* ================= HERO ================= */
+/*  HERO  */
 .hero {
     display: flex;
     flex-wrap: wrap;
@@ -139,7 +139,7 @@ body {
     color: #ffe800;
 }
 
-/* ================= ABOUT ================= */
+/* ABOUT */
 .about {
     margin-top: 100px;
     max-width: 500px;
@@ -158,7 +158,7 @@ body {
     line-height: 1.6;
 }
 
-/* ================= ABOUT PAGE CARDS ================= */
+/*  ABOUT PAGE CARDS  */
 .about-page {
     max-width: 900px;
 }
@@ -192,7 +192,7 @@ body {
     padding: 20px;
     border-radius: 25px;
     transition: all 0.3s ease; /* hover smooth */
-    position: relative; /* pseudo-element hover effect জন্য */
+    position: relative; 
     overflow: hidden;
 }
 
@@ -237,7 +237,7 @@ body {
     grid-column: span 2; /* width increase */
 }
 
-/* ================= CV BUTTON ================= */
+/* CV BUTTON */
 .cv-btn {
     position: fixed;
     bottom: 20px;
@@ -263,7 +263,7 @@ body {
     }
 }
 
-/* yellow circle with glow */
+/* yellow circle er glow effect tar jonno */
 .cv-circle {
     width: 56px;
     height: 56px;
@@ -294,7 +294,7 @@ body {
     transform: translateY(-4px);
 }
 
-/* ================= RESPONSIVE ================= */
+/* RESPONSIVE  */
 @media screen and (max-width: 768px) {
     .sidebar {
         width: 70px;
@@ -435,7 +435,7 @@ body {
     line-height: 1.6;
     margin: 4px 0;
 }
-/* ================= GLOBAL SOCIAL(fb..icon) ================= */
+/* GLOBAL SOCIAL(fb..icon)  */
 
 .global-social {
     margin: 80px auto 40px;
@@ -486,7 +486,7 @@ body {
  
 
 
-/* ================= PROJECTS PAGE ================= */
+/*  PROJECTS PAGE */
 
 /* page main title */
 .projects-page .page-title {
@@ -581,7 +581,7 @@ body {
     text-align: center;
 }
 .design-card p {
-    margin: 10px 0 15px;   /* image এর ঠিক নিচে gap */
+    margin: 10px 0 15px;   /* image er niche gap */
     text-align: center;     /* text center */
     background: none;       /* gray box remove */
 }
@@ -622,7 +622,7 @@ body {
     font-size: 28px;
     margin-bottom: 5px;
 }
-/* ================= SKILLS PAGE ================= */
+/*   SKILLS PAGE   */
 .skills-page .page-title {
     text-align: center;
     font-family: 'Bungee Shade', cursive;
@@ -695,10 +695,10 @@ body {
     box-shadow: 0 0 20px 5px #ffe600;
 }
 .skill-title i {
-    margin-right: 10px;      /* icon and text gap */
+    margin-right: 10px;      /* icon ar txt gap */
     color: #ffe600;          /* yellow icon */
-    font-size: 26px;         /* slightly bigger than text */
-    vertical-align: middle;  /* center with text */
+    font-size: 26px;         /*  text theke boro */
+    vertical-align: middle;  /* center txt */
 }
 /* ================= CONTACT PAGE ================= */
 
