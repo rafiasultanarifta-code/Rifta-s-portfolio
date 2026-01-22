@@ -63,6 +63,13 @@ It includes my **education background**, **technical expertise**, and **contact 
 - **Facebook:** https://www.facebook.com/profile.php?id=61560822404794  
 
 ---
+## 🔗 Project Links
+
+- 🎨 **Figma Design:**  
+  https://www.figma.com/proto/iifkEbNP92iIRyqbsnZedr/Rifta?node-id=1-2  
+
+- 🌐 **Live Website:**  
+  https://rafiasultanarifta-code.github.io/Rifta-s-portfolio/
 
 ##  CV
 
